@@ -1,0 +1,17 @@
+:host {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+
+    nav {
+        margin-top: 10px;
+        
+        ul {
+            display: flex;
+            background-color: #fff;
+            gap: 30px;
+        }
+    }
+}
