@@ -1,3 +1,5 @@
+@use '../../../styles/variables' as *;
+
 :host {
     display: flex;
     align-items: center;
@@ -34,21 +36,18 @@
                         width: 30px;
                         height: 30px;
                         transition: .3s ease;
-                        color: #727272;
+                        color: $light-gray;
                     }
 
-                    &:hover {                        
-                        .icon {
-                            fill: #fff;
-                            color: #fff;
-                        }
+                    &:hover .icon{                        
+                        color: $white;
                     }
 
                     &.active {
-                        background-color: #000; 
+                        background-color: $black; 
                         
                         .icon {
-                            color: #fff;
+                            color: $white;
                         }
                     }
                 }

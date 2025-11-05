@@ -1,0 +1,106 @@
+@use '../../styles/variables' as *;
+
+:host {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    padding-top: 120px;
+
+    .img-wrapper {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        border-radius: 50%;
+        box-shadow: 0 40px 300px 150px #9797974f;
+        transition: .3s;
+
+        img {
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        &:hover {
+            box-shadow: 0 0 20px 10px rgba(245, 182, 66, 0.5);
+        }
+    }
+
+    .title {
+        font-weight: 500;
+        padding-top: 30px;
+        font-size: 3rem;
+        background-image: linear-gradient(to right, $primary-color, #feb47b, #ffcc00);
+        background-clip: text;
+        color: transparent;
+        letter-spacing: 2px;
+    }
+
+    p {
+        color: $secondary-text;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-top: 20px;
+    }
+
+    .social {
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        padding-top: 40px;
+
+        .icon {
+            color: $dark-gray;
+            width: 40px;
+            height: 40px;
+            transition: .3s;
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+
+    .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px auto;
+        background-color: rgb(18, 18, 18);
+        gap: 10px;
+        font-size: 1.1rem;
+        border: 1px solid $dark-gray;
+        border-radius: 8px;
+        max-width: 250px;
+        padding: 8px 16px;
+        color: $secondary-text;
+        transition: .3s ease;
+
+        &:hover {
+            background-color: $primary-color; 
+            border-color: $primary-color;
+            box-shadow: 0 0 10px 5px rgba(255, 126, 95, 0.6); 
+           
+            color: $white;
+        }
+    }
+
+    .projects {
+        display: flex;
+        padding-top: 50px;
+        flex-direction: column;
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-align: left;
+
+            &::after {
+                content: "";
+                display: block;
+                background: $primary-color;
+                width: 12%;
+                height: 2px;
+            }
+        }
+    }
+}
