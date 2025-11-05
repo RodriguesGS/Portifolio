@@ -5,6 +5,14 @@ export const routes: Routes = [
     {
         path: '',
         component: Home,
-        title: 'Gabriel Portifolio'
+        pathMatch: 'full',
+        title: 'Gabriel • Inicio'
+    },
+    {
+        path: 'projects',
+       loadComponent: () =>
+        import('./features/projects/projects').then(
+            (m) => m.Projects
+        )
     }
 ];

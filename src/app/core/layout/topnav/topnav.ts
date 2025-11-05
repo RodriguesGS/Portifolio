@@ -1,12 +1,15 @@
 import { Component, inject } from '@angular/core';
 import { MatIconModule, MatIconRegistry } from '@angular/material/icon'
 import { DomSanitizer } from '@angular/platform-browser';
+import { RouterLinkActive, RouterLinkWithHref } from '@angular/router';
 
 @Component({
   selector: 'app-topnav',
   imports: [
-    MatIconModule
-  ],
+    MatIconModule,
+    RouterLinkActive,
+    RouterLinkWithHref
+],
   templateUrl: './topnav.html',
   styleUrl: './topnav.scss',
 })
