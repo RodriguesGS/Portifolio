@@ -6,7 +6,7 @@ export const routes: Routes = [
         path: '',
         component: Home,
         pathMatch: 'full',
-        title: 'Gabriel • Inicio'
+        title: 'RodriguesGS • Inicio'
     },
     {
         path: 'projects',
