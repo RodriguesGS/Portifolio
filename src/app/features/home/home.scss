@@ -102,5 +102,41 @@
                 height: 2px;
             }
         }
+
+        ul {
+            margin-top: 30px;
+
+            .project-item {
+                margin-bottom: 15px;
+
+                a {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px 0;
+                    transition: .3s;
+
+                    &:hover {
+                        transform: translateX(10px);
+                        color: $primary-color;
+
+                    }
+
+                    p {
+                        margin: 0;
+                        font-size: 1.1rem;
+                    }
+
+                    span {
+                        font-size: .9rem;
+                    }
+                }
+            }
+        }
+
+        .btn {
+            margin: 10px 0;
+            max-width: 150px;
+        }
     }
 }
