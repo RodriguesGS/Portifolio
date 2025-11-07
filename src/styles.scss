@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+::selection {
+    background-color: $primary-color;
+    color: $white;
+}
+
 html {
     height: 100%;
     width: 100%;
