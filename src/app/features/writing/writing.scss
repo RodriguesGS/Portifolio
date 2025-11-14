@@ -1,0 +1,107 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as mixins;
+
+:host {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    padding-top: 120px;
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 600;
+
+        &::after {
+            content: '';
+            height: 2px;
+            width: 10%;
+            margin: 0 auto;
+            display: block;
+            background-color: $primary-color;
+        }
+    }
+
+    span {
+        color: $secondary-text;
+        font-size: .9rem;
+        padding-top: 10px;
+    }
+
+    .articles {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 30px;
+
+        .article-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px 0;
+            border-radius: 8px;
+            cursor: pointer;
+            position: relative;
+            transition: .3s ease;
+            
+            &:hover {
+                transform: scale(1.05);
+
+                &::after {
+                    background-color: $primary-color;
+                    opacity: 1;
+                }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                background-color: $dark-gray;
+                opacity: .3;
+                transition: .3s;
+            }
+
+            .title {
+                font-size: 1.3rem;
+                font-weight: 600;
+                margin-bottom: 10px;
+                text-align: left;
+            }
+
+              .excerpt {
+                font-size: .9rem;
+                color: $light-gray;
+                margin-bottom: 15px;
+                text-align: left;
+            }
+
+            .meta {
+                display: flex;
+                align-items: center;
+                padding-top: 20px;
+                gap: 12px;
+                color: #aaa;
+
+                .date {
+                    font-size: .8rem;
+                }
+
+                .tag {
+                    padding: 6px 12px;
+                    border-radius: 20px;
+                    background: rgba(255, 255, 255, 0.2);
+                    font-size: 0.8rem;
+                    transition: background 0.3s ease, color 0.3s ease;
+
+                    &:hover {
+                        background: $primary-color;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

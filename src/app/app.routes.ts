@@ -10,9 +10,18 @@ export const routes: Routes = [
     },
     {
         path: 'projects',
-       loadComponent: () =>
-        import('./features/projects/projects').then(
-            (m) => m.Projects
-        )
+        loadComponent: () =>
+            import('./features/projects/projects').then(
+                (m) => m.Projects
+            ),
+        title: 'RodriguesGS • Projetos'
+    },
+    {
+        path: 'articles',
+        loadComponent: () =>
+            import('./features/writing/writing').then(
+                (m) => m.Writing
+            ),
+        title: 'RodriguesGS • Artigos'
     }
 ];
