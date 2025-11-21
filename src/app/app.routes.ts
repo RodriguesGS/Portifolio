@@ -23,5 +23,13 @@ export const routes: Routes = [
                 (m) => m.Writing
             ),
         title: 'RodriguesGS • Artigos'
+    },
+    {
+        path: 'about',
+        loadComponent: () =>
+            import('./features/about/about').then(
+                (m) => m.About
+            ),
+        title: 'RodriguesGS • Sobre Mim'
     }
 ];
