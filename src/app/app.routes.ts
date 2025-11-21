@@ -31,5 +31,14 @@ export const routes: Routes = [
                 (m) => m.About
             ),
         title: 'RodriguesGS • Sobre Mim'
+    },
+    {
+        path: 'contact',
+        loadComponent: () =>
+            import('./features/contact/contact').then(
+                (m) => m.Contact
+            ),
+        title: 'RodriguesGS • Contato'
     }
 ];
+    
