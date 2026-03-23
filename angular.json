@@ -31,6 +31,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/tailwind.css",
               "src/styles.scss"
             ]
           },
@@ -96,5 +97,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "a2748d31-878f-4091-9676-9ea66e4ca043"
   }
 }

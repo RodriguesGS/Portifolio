@@ -4,7 +4,8 @@ import { Home } from './features/home/home';
 export const routes: Routes = [
     {
         path: '',
-        component: Home,
+        loadComponent: () =>
+            import('./features/home/home').then((m) => m.Home),
         pathMatch: 'full',
         title: 'RodriguesGS • Inicio'
     },
