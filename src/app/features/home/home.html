@@ -1,55 +1,31 @@
-<div class="img-wrapper">
-    <img src="/assets/img/perfil.jpg" alt="Imagem de Perfil">
-</div>
+<section class="flex flex-col items-center justify-center h-full gap-6 py-8">
+    <div class="img-wrapper mt-32 w-28 h-28 rounded-full transition-all duration-300 cursor-pointer">
+        <img src="/assets/img/perfil.jpg" alt="Imagem de Perfil" class="w-full h-full rounded-full object-cover">
+    </div>
 
-<h1 class="title">Dados | Análise | Potencial</h1>
-<p>Grande interesse em transformar dados em soluções práticas, aplicando técnicas de análise, processamento e aprendizado de máquina para resolver desafios e otimizar sistemas. Busco sempre aprender e crescer nas áreas de Ciência e Engenharia de Dados</p>
+    <div class="flex flex-col gap-1">
+        <h1 class="font-semibold text-5xl tracking-wide text-text-primary">Gabriel Rodrigues</h1>
+        <span class="text-lg tracking-widest bg-linear-to-r from-primary via-[#feb47b] to-[#ffcc00] bg-clip-text text-transparent">Engenharia e Ciência de Dados</span>
+    </div>
 
-<article class="social">
-    <a href="https://github.com/RodriguesGS" target="_blank"><mat-icon class="icon" svgIcon="github"></mat-icon></a>
-    <a href="https://www.linkedin.com/in/gabriel-soares1402/" target="_blank"><mat-icon class="icon" svgIcon="linkedin"></mat-icon></a>
-    <a href="#" target="_blank"><mat-icon class="icon" svgIcon="x"></mat-icon></a>
-    <a href="#" target="_blank"><mat-icon class="icon" svgIcon="spotify"></mat-icon></a>
-    <a href="https://www.instagram.com/guesgabriel_/" target="_blank"><mat-icon class="icon" svgIcon="instagram"></mat-icon></a>
-</article>
+    <p class="text-text-secondary text-lg leading-relaxed max-w-xl">Dados, análise e muita curiosidade</p>
 
-<a class="btn" href="assets/cv/cv.pdf" target="_blank" rel="noopener">
-    <span>Download CV</span>
-    <mat-icon>download</mat-icon>
-</a>
-
-<section class="projects">
-    <h2>Projetos</h2>
-    
-    <ul>
-        <li class="project-item">
-            <a href="https://github.com/RodriguesGS/BPTracker" target="_blank">
-                <p>BP Tracker</p>
-                <span>Em andamento...</span>
+    <article class="flex gap-6 items-center justify-center">
+        @for (item of socialLinks; track item.icon) {
+            <a [href]="item.url" target="_blank" class="social-link">
+                <mat-icon [svgIcon]="item.icon" class="social-icon"></mat-icon>
             </a>
-        </li>
-        <li class="project-item">
-            <a href="https://github.com/RodriguesGS/FocusTimer" target="_blank">
-                <p>Focus TImer</p>
-                <span>2025</span>
-            </a>
-        </li>
-        <li class="project-item">
-            <a href="https://github.com/RodriguesGS/Listrama" target="_blank">
-                <p>Listrama</p>
-                <span>2025</span>
-            </a>
-        </li>
-        <li class="project-item">
-            <a href="https://github.com/RodriguesGS/RandomizerUI" target="_blank">
-                <p>RandomizerUI</p>
-                <span>2024</span>
-            </a>
-        </li>
-    </ul>
+        }
+    </article>
 
-    <button class="btn" routerLink="/projects">
-        <span>Ver mais</span>
-        <mat-icon class="icon">arrow_forward</mat-icon>
-    </button>
+    <div class="flex gap-4 items-center">
+        <a href="assets/cv/cv.pdf" target="_blank" rel="noopener" class="home-btn-primary flex items-center gap-2">
+            <span>Download CV</span>
+            <mat-icon>download</mat-icon>
+        </a>
+        <a routerLink="/projects" class="home-btn-outline flex items-center gap-2">
+            <span>Ver projetos</span>
+            <mat-icon>arrow_forward</mat-icon>
+        </a>
+    </div>
 </section>

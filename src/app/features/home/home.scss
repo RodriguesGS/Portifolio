@@ -1,140 +1,66 @@
-@use '../../styles/variables' as *;
-@use '../../styles/mixins' as mixins;
-
 :host {
     display: flex;
     flex-direction: column;
-    max-width: 800px;
-    padding-top: 120px;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
 
     .img-wrapper {
-        width: 150px;
-        height: 150px;
-        margin: 0 auto;
-        border-radius: 50%;
         box-shadow: 0 40px 300px 150px #9797974f;
-        transition: .3s;
-
-        img {
-            border-radius: 50%;
-            object-fit: cover;
-        }
+        transition: box-shadow 0.3s ease;
 
         &:hover {
             box-shadow: 0 0 20px 10px rgba(245, 182, 66, 0.5);
         }
     }
 
-    .title {
-        font-weight: 500;
-        padding-top: 30px;
-        font-size: 3rem;
-        background-image: linear-gradient(to right, $primary-color, #feb47b, #ffcc00);
-        background-clip: text;
-        color: transparent;
-        letter-spacing: 2px;
-    }
-
-    p {
-        color: $secondary-text;
-        font-size: 1.1rem;
-        line-height: 1.6;
-        margin-top: 20px;
-    }
-
-    .social {
-        display: flex;
-        gap: 40px;
-        justify-content: center;
-        padding-top: 40px;
-
-        .icon {
-            color: $dark-gray;
-            width: 40px;
-            height: 40px;
-            transition: .3s;
-
-            &:hover {
-                color: $white;
-            }
-        }
-    }
-
-    .btn {
-        @include mixins.flex-center;
-        margin: 30px auto;
-        background-color: rgb(18, 18, 18);
-        gap: 10px;
-        font-size: 1.1rem;
-        border: 1px solid $dark-gray;
-        border-radius: 8px;
-        max-width: 250px;
-        padding: 8px 16px;
-        color: $secondary-text;
-        transition: .3s ease;
+    .social-icon {
+        width: 36px;
+        height: 36px;
+        color: var(--color-dark-gray);
+        transition: .3s;
 
         &:hover {
-            background-color: $primary-color; 
-            border-color: $primary-color;
-            box-shadow: 0 0 10px 5px rgba(255, 126, 95, 0.6); 
-           
-            color: $white;
+            color: var(--color-white);
         }
     }
 
-    .projects {
+    .home-btn-primary {
         display: flex;
-        padding-top: 50px;
-        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        font-size: 1rem;
+        background-color: var(--color-primary);
+        border: 1px solid var(--color-primary);
+        border-radius: 8px;
+        padding: 8px 20px;
+        color: var(--color-white);
+        transition: all 0.3s ease;
 
-        h2 {
-            font-size: 2rem;
-            font-weight: 600;
-            letter-spacing: 2px;
-            text-align: left;
-
-            &::after {
-                content: "";
-                display: block;
-                background: $primary-color;
-                width: 12%;
-                height: 2px;
-            }
+        &:hover {
+            box-shadow: 0 0 10px 5px rgba(255, 126, 95, 0.4);
+            opacity: 0.9;
         }
+    }
 
-        ul {
-            margin-top: 30px;
+    .home-btn-outline {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        font-size: 1rem;
+        background-color: transparent;
+        border: 1px solid var(--color-dark-gray);
+        border-radius: 8px;
+        padding: 8px 20px;
+        color: var(--color-text-secondary);
+        transition: all 0.3s ease;
 
-            .project-item {
-                margin-bottom: 15px;
-
-                a {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    padding: 10px 0;
-                    transition: .3s;
-
-                    &:hover {
-                        transform: translateX(10px);
-                        color: $primary-color;
-                    }
-
-                    p {
-                        margin: 0;
-                        font-size: 1.1rem;
-                    }
-
-                    span {
-                        font-size: .9rem;
-                    }
-                }
-            }
-        }
-
-        .btn {
-            margin: 10px 0;
-            max-width: 150px;
+        &:hover {
+            border-color: var(--color-primary);
+            color: var(--color-primary);
         }
     }
 }

@@ -3,6 +3,11 @@ import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 import { RouterLink } from "@angular/router";
 
+
+interface SocialLink {
+  icon: string;
+  url: string;
+}
 @Component({
   selector: 'app-home',
   imports: [
@@ -13,33 +18,20 @@ import { RouterLink } from "@angular/router";
   styleUrl: './home.scss',
 })
 export class Home {
-iconReg = inject(MatIconRegistry)
-sanitizer = inject(DomSanitizer)
+  private iconReg = inject(MatIconRegistry);
+  private sanitizer = inject(DomSanitizer);
 
-  constructor() {
-    this.registerIcon();
-  }
+  socialLinks: SocialLink[] = [
+    { icon: 'github',    url: 'https://github.com/RodriguesGS' },
+    { icon: 'linkedin',  url: 'https://www.linkedin.com/in/gabriel-soares1402/' },
+    { icon: 'spotify',   url: 'https://open.spotify.com/user/e7ocuks30i4jx4qq9gyi27pp5?si=2c12cc1f97cb4cd4' },
+    { icon: 'instagram', url: 'https://www.instagram.com/guesgabriel_/' },
+  ];
 
-  protected registerIcon() {
+  private _ = this.socialLinks.forEach(item =>
     this.iconReg.addSvgIcon(
-      'github',
-      this.sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/github.svg')
-    );
-    this.iconReg.addSvgIcon(
-      'linkedin',
-      this.sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/linkedin.svg')
-    );
-    this.iconReg.addSvgIcon(
-      'x',
-      this.sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/x.svg')
-    );
-    this.iconReg.addSvgIcon(
-      'spotify',
-      this.sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/spotify.svg')
-    );
-    this.iconReg.addSvgIcon(
-      'instagram',
-      this.sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/instagram.svg')
-    );
-  }
+      item.icon,
+      this.sanitizer.bypassSecurityTrustResourceUrl(`/assets/icons/${item.icon}.svg`)
+    )
+  );
 }
