@@ -1,86 +1,37 @@
-<h2>Projetos</h2>
-<span>Uma lista de alguns dos meus projetos.</span>
-
-<section class="cards">
-    <div class="card-item">
-        <div class="card-header">
-            <h3 class="card-title">Focus TImer</h3>
-
-            <div class="links">
-                <a href="https://focus-timer-gamma.vercel.app/" target="_blank"><mat-icon class="icon">visibility</mat-icon></a>
-                <a href="https://github.com/RodriguesGS/FocusTimer" target="_blank"><mat-icon class="icon" svgIcon="github"></mat-icon></a>
-            </div>
-        </div>
-
-        <div class="img-wrapper">
-            <img src="/assets/img/projects/focusTImer.jpeg" alt="Focus TImer">
-        </div>
-
-        <div class="tags">
-            <span>Angular</span>
-            <span>Typescript</span>
-            <span>SCSS</span>
-        </div>
+<div class="flex flex-col items-center justify-center h-full w-full max-w-3xl gap-8 mt-12 py-8">
+    <div class="flex flex-col gap-1">
+        <h2 class="text-4xl font-semibold text-text-primary">Projetos</h2>
+        <span class="text-sm text-text-secondary">Uma lista de alguns dos meus projetos.</span>
+        <div class="h-0.5 w-12 mx-auto mt-2 bg-primary rounded-full"></div>
     </div>
 
-    <div class="card-item">
-        <div class="card-header">
-            <h3 class="card-title">RandomizerUI</h3>
+    <div class="grid grid-cols-2 gap-8 w-full">
+        @for (project of projects; track project.name) {
+            <a [href]="project.github" target="_blank" class="project-card group">
+                <div class="flex justify-between items-start mb-3">
+                    <span class="text-base font-semibold text-text-primary group-hover:text-primary transition-colors duration-300">
+                        {{ project.name }}
+                    </span>
+                </div>
 
-            <div class="links">
-                <a href="https://randomizer-ui.vercel.app/" target="_blank"><mat-icon class="icon">visibility</mat-icon></a>
-                <a href="https://github.com/RodriguesGS/RandomizerUI" target="_blank"><mat-icon class="icon" svgIcon="github"></mat-icon></a>
-            </div>
-        </div>
+                <div class="flex items-center gap-2">
+                    <span class="status-badge" [attr.data-status]="project.status">
+                        {{ project.status }}
+                    </span>
+                    <span class="text-xs text-text-secondary">{{ project.year }}</span>
+                </div>
 
-        <div class="img-wrapper">
-            <img src="/assets/img/projects/randomizerUI.jpeg" alt="Randomizer UI">
-        </div>
+                <p class="text-sm text-text-secondary mb-4">{{ project.description }}</p>
 
-        <div class="tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JS</span>
-        </div>
+                <div class="flex justify-between items-center">
+                    <div class="flex gap-2 flex-wrap">
+                        @for (tag of project.tags; track tag) {
+                            <span class="tag">{{ tag }}</span>
+                        }
+                    </div>
+                    <mat-icon svgIcon="github" class="github-icon"></mat-icon>
+                </div>
+            </a>
+        }
     </div>
-
-    <div class="card-item">
-        <div class="card-header">
-            <h3 class="card-title">Listrama</h3>
-
-            <div class="links">
-                <a href="https://listrama.vercel.app/" target="_blank"><mat-icon class="icon">visibility</mat-icon></a>
-                <a href="https://github.com/RodriguesGS/Listrama" target="_blank"><mat-icon class="icon" svgIcon="github"></mat-icon></a>
-            </div>
-        </div>
-
-        <div class="img-wrapper">
-            <img src="/assets/img/projects/listrama.jpeg" alt="Listrama">
-        </div>
-
-        <div class="tags">
-            <span>Angular</span>
-            <span>Typescript</span>
-            <span>SCSS</span>
-        </div>
-    </div>
-
-    <div class="card-item">
-        <div class="card-header">
-            <h3 class="card-title">BP Tracker</h3>
-
-            <div class="links">
-                <a href="@"><mat-icon class="icon">visibility</mat-icon></a>
-                <a href="#"><mat-icon class="icon" svgIcon="github"></mat-icon></a>
-            </div>
-        </div>
-
-        <div class="img-wrapper">
-            <span>Em breve...</span>
-        </div>
-
-        <div class="tags">
-            <span>Python</span>
-        </div>
-    </div>
-</section>
+</div>
