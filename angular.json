@@ -28,7 +28,8 @@
                 "glob": "**/*",
                 "input": "public"
               },
-              "src/assets"
+              "src/assets",
+              { "glob": ".htaccess", "input": "./", "output": "/" }
             ],
             "styles": [
               "src/tailwind.css",
