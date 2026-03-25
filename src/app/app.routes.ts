@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-import { Home } from './features/home/home';
 
 export const routes: Routes = [
     {
@@ -18,12 +17,12 @@ export const routes: Routes = [
         title: 'RodriguesGS • Projetos'
     },
     {
-        path: 'articles',
+        path: 'skills',
         loadComponent: () =>
-            import('./features/writing/writing').then(
-                (m) => m.Writing
+            import('./features/skills/skills').then(
+                (m) => m.Skills
             ),
-        title: 'RodriguesGS • Artigos'
+        title: 'RodriguesGS • Habilidades'
     },
     {
         path: 'about',

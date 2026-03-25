@@ -24,11 +24,11 @@ export class Topnav {
   private sanitizer = inject(DomSanitizer);
 
   navItems: NavItem[] = [
-    { route: '',         icon: 'home',     label: 'Início',     exact: true },
+    { route: '',         icon: 'home',     label: 'Início', exact: true },
     { route: '/projects',icon: 'projects', label: 'Projetos' },
-    { route: '/articles',icon: 'articles', label: 'Artigos'  },
-    { route: '/about',   icon: 'about',    label: 'Sobre'    },
-    { route: '/contact', icon: 'contact',  label: 'Contato'  },
+    { route: '/skills',  icon: 'skills',   label: 'Habilidades' },
+    { route: '/about',   icon: 'about',    label: 'Sobre' },
+    { route: '/contact', icon: 'contact',  label: 'Contato' },
   ];
 
   private _ = this.navItems.forEach(item =>

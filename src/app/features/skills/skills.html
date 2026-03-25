@@ -1,0 +1,19 @@
+<div class="flex flex-col items-center justify-center h-full w-full max-w-3xl gap-8 py-8">
+    <div class="flex flex-col gap-1">
+        <h2 class="text-4xl font-semibold text-text-primary">
+            Habilidades
+        </h2>
+        <div class="h-0.5 w-12 mx-auto mt-2 bg-primary rounded-full"></div>
+    </div>
+
+    <div class="grid grid-cols-4 gap-4 w-full">
+        @for (skill of skills; track skill.name) {
+            <a [style.--skill-color]="skill.color" [href]="skill.docs" target="_blank" class="skill-card group">
+                <i [class]="skill.icon + ' skill-icon'"></i>
+                <span class="text-sm text-text-secondary group-hover:text-text-primary transition-colors duration-300">
+                    {{ skill.name }}
+                </span>
+            </a>
+        }
+    </div>
+</div>
