@@ -1,20 +1,51 @@
-<h2>Sobre mim</h2>
-<span>Desenvolvedor com foco em <strong>Ciência de Dados</strong> e <strong>engenharia de dados</strong>, apaixonado por transformar dados em soluções inteligentes e práticas. Estou sempre em busca de aprimorar minhas habilidades e criar soluções com impacto real.</span>
-
-<section>
-    <div class="img-wrapper">
-        <img src="/assets/img/imgPerfil.jpeg" alt="Imagem de perfil">
+<div class="flex flex-col items-center justify-center h-full w-full max-w-2xl gap-4 py-8">
+    <div class="flex flex-col gap-1 text-center">
+        <h2 class="text-3xl font-semibold text-text-primary">
+            Sobre mim
+        </h2>
+        <div class="h-[2px] w-10 mx-auto mt-1 bg-primary rounded-full"></div>
     </div>
 
-    <div class="content">
-        <p> Tenho experiência com <strong>Python</strong>, <strong>ETL</strong>, <strong>machine learning</strong>, e um forte interesse por <strong>visualização de dados</strong> e <strong>análise estatística</strong>. Combinando minhas habilidades de desenvolvimento com dados, busco sempre criar soluções simples, eficazes e escaláveis.</p>
+    <div class="w-full rounded-2xl overflow-hidden border border-white/10">
+        <div class="flex items-center gap-3 px-4 py-2.5 bg-white/[0.03] border-b border-white/10">
+            <div class="flex gap-1.5">
+                <div class="w-2.5 h-2.5 rounded-full bg-[#ff5f57]"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#febc2e]"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#28c840]"></div>
+            </div>
+            <span class="font-mono text-xs text-text-secondary ml-1">README.md — Gabriel Rodrigues</span>
+        </div>
 
-        <p>Atualmente, estou construindo projetos autorais focados em <strong>data pipelines</strong>, <strong>automação</strong> e <strong>modelagem de dados</strong>. Meu objetivo é criar soluções que ajudem a tomar decisões mais inteligentes e fundamentadas.</p>
+        <div class="flex flex-col gap-3 p-5">
+            <div class="font-mono text-xs leading-6 p-3 rounded-xl bg-black/40 border border-white/8 text-left">
+                <span class="text-white/20"># Gabriel Rodrigues — Data Profile</span><br>
+                <span class="text-[#79c0ff]">name</span>      = <span class="text-[#a5d6ff]">"Gabriel Rodrigues"</span><br>
+                <span class="text-[#79c0ff]">focus</span>     = <span class="text-[#a5d6ff]">"Engenharia & Ciência de Dados"</span><br>
+                <span class="text-[#79c0ff]">stack</span>     = <span class="text-[#ffa657]">["Python", "SQL", "Airflow", "AWS"]</span><br>
+                <span class="text-[#79c0ff]">currently</span> = <span class="text-[#a5d6ff]">"Estudando conceitos de nuvem"</span><br>
+                <span class="text-[#79c0ff]">goal</span>      = <span class="text-[#a5d6ff]">"Dados que geram decisões reais"</span>
+            </div>
 
-        <div class="highlights">
-            <span>Data Science</span>
-            <span>Python & ETL</span>
-            <span>Machine Learning</span>
+
+            <div class="h-px w-full bg-white/5"></div>
+
+            <div class="grid grid-cols-2 gap-2">
+                @for (item of items; track item.label) {
+                    <div class="flex gap-3 items-start p-3 rounded-xl bg-white/[0.03] border border-white/8 transition-all duration-300 hover:bg-primary/5 hover:border-primary/20 hover:translate-x-1 cursor-default">
+                        <span class="text-lg shrink-0">
+                            {{ item.icon }}
+                        </span>
+                        <div class="flex flex-col gap-0.5 text-left">
+                            <span class="font-mono text-[10px] text-primary tracking-wide">
+                                {{ item.label }}
+                            </span>
+                            <p class="text-[11px] text-text-secondary leading-relaxed" [innerHTML]="item.text"></p>
+                        </div>
+                    </div>
+                }
+            </div>
         </div>
     </div>
-</section>
+
+    
+</div>
