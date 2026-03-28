@@ -3,11 +3,11 @@
         <h2 class="text-3xl font-semibold text-text-primary">
             Sobre mim
         </h2>
-        <div class="h-[2px] w-10 mx-auto mt-1 bg-primary rounded-full"></div>
+        <div class="h-0.5 w-10 mx-auto mt-1 bg-primary rounded-full"></div>
     </div>
 
     <div class="w-full rounded-2xl overflow-hidden border border-white/10">
-        <div class="flex items-center gap-3 px-4 py-2.5 bg-white/[0.03] border-b border-white/10">
+        <div class="flex items-center gap-3 px-4 py-2.5 bg-white/3 border-b border-white/10">
             <div class="flex gap-1.5">
                 <div class="w-2.5 h-2.5 rounded-full bg-[#ff5f57]"></div>
                 <div class="w-2.5 h-2.5 rounded-full bg-[#febc2e]"></div>
@@ -31,7 +31,7 @@
 
             <div class="grid grid-cols-2 gap-2">
                 @for (item of items; track item.label) {
-                    <div class="flex gap-3 items-start p-3 rounded-xl bg-white/[0.03] border border-white/8 transition-all duration-300 hover:bg-primary/5 hover:border-primary/20 hover:translate-x-1 cursor-default">
+                    <div class="flex gap-3 items-start p-3 rounded-xl bg-white/3 border border-white/8 transition-all duration-300 hover:bg-primary/5 hover:border-primary/20 hover:translate-x-1 cursor-default">
                         <span class="text-lg shrink-0">
                             {{ item.icon }}
                         </span>
