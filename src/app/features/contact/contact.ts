@@ -24,7 +24,7 @@ export class Contact {
     {
       label: 'E-mail',
       desc: 'Melhor canal para oportunidades e parcerias. Respondo rápido!',
-      href: 'mailto:rodriguesgasoares@gmail.com',
+      href: 'mailto:contato@rodriguesgs.com',
       color: '#ff7e5f',
       svgIcon: 'email'
     },

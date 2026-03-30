@@ -19,17 +19,17 @@
     <article class="flex gap-6 items-center justify-center">
         @for (item of socialLinks; track item.icon) {
             <a [href]="item.url" target="_blank" class="social-link">
-                <mat-icon [svgIcon]="item.icon" class="social-icon"></mat-icon>
+                <mat-icon [svgIcon]="item.icon" class="social-icon duration-300"></mat-icon>
             </a>
         }
     </article>
 
     <div class="flex gap-4 items-center">
-        <a href="assets/cv/cv.pdf" target="_blank" rel="noopener" class="home-btn-outline flex items-center gap-2">
+        <a href="assets/cv/cv.pdf" target="_blank" rel="noopener" class="home-btn flex items-center justify-center text-text-secondary gap-2 border border-dark-gray rounded-lg py-2 px-5 duration-300">
             <span>Download CV</span>
             <mat-icon>download</mat-icon>
         </a>
-        <a routerLink="/projects" class="home-btn-outline flex items-center gap-2">
+        <a routerLink="/projetos" class="home-btn flex items-center justify-center text-text-secondary gap-2 border border-dark-gray rounded-lg py-2 px-5 duration-300">
             <span>Ver projetos</span>
             <mat-icon>arrow_forward</mat-icon>
         </a>
