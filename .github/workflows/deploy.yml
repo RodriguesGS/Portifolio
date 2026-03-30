@@ -1,3 +1,5 @@
+name: Deploy Portfólio
+
 on:
   push:
     branches:
@@ -17,12 +19,13 @@ jobs:
       - name: Build Angular
         run: npm run build -- --configuration production
 
-      - name: Deploy via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Deploy via SFTP
+        uses: appleboy/scp-action@v0.1.7
         with:
-          server: ${{ secrets.FTP_SERVER }}
+          host: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/Portifolio/browser/
-          server-dir: /public_html/
-          protocol: ftps
+          port: 22
+          source: "./dist/Portifolio/browser/*"
+          target: "/home/u850816178/domains/rodriguesgs.com/public_html"
+          rm: true
