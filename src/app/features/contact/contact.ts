@@ -37,7 +37,7 @@ export class Contact {
     },
     {
       label: 'GitHub',
-      desc: 'Veja meus projetos, pipelines e código aberto.',
+      desc: 'Onde os dados viram código > projetos, pipelines e experimentos abertos.',
       href: 'https://github.com/RodriguesGS',
       color: '#e6edf3',
       svgIcon: 'github'

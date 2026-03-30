@@ -9,7 +9,7 @@ export const routes: Routes = [
         title: 'RodriguesGS • Inicio'
     },
     {
-        path: 'projects',
+        path: 'projetos',
         loadComponent: () =>
             import('./features/projects/projects').then(
                 (m) => m.Projects
@@ -17,7 +17,7 @@ export const routes: Routes = [
         title: 'RodriguesGS • Projetos'
     },
     {
-        path: 'skills',
+        path: 'habilidades',
         loadComponent: () =>
             import('./features/skills/skills').then(
                 (m) => m.Skills
@@ -25,7 +25,7 @@ export const routes: Routes = [
         title: 'RodriguesGS • Habilidades'
     },
     {
-        path: 'about',
+        path: 'sobre',
         loadComponent: () =>
             import('./features/about/about').then(
                 (m) => m.About
@@ -33,7 +33,7 @@ export const routes: Routes = [
         title: 'RodriguesGS • Sobre Mim'
     },
     {
-        path: 'contact',
+        path: 'contato',
         loadComponent: () =>
             import('./features/contact/contact').then(
                 (m) => m.Contact

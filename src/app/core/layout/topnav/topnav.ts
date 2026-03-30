@@ -25,10 +25,10 @@ export class Topnav {
 
   navItems: NavItem[] = [
     { route: '',         icon: 'home',     label: 'Início', exact: true },
-    { route: '/projects',icon: 'projects', label: 'Projetos' },
-    { route: '/skills',  icon: 'skills',   label: 'Habilidades' },
-    { route: '/about',   icon: 'about',    label: 'Sobre' },
-    { route: '/contact', icon: 'contact',  label: 'Contato' },
+    { route: '/projetos',icon: 'projects', label: 'Projetos' },
+    { route: '/habilidades',  icon: 'skills',   label: 'Habilidades' },
+    { route: '/sobre',   icon: 'about',    label: 'Sobre' },
+    { route: '/contato', icon: 'contact',  label: 'Contato' },
   ];
 
   private _ = this.navItems.forEach(item =>

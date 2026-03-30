@@ -1,66 +1,56 @@
-:host {
+.img-wrapper {
+    box-shadow: 0 40px 300px 150px #9797974f;
+
+    &:hover {
+        box-shadow: 0 0 20px 10px rgba(245, 182, 66, 0.5);
+    }
+}
+
+.social-icon {
+    width: 36px;
+    height: 36px;
+    color: var(--color-dark-gray);
+    transition: .3s;
+
+    &:hover {
+        color: var(--color-white);
+    }
+}
+
+.home-btn-primary {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex: 1;
-    height: 100%;
+    gap: 8px;
+    font-size: 1rem;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: 8px;
+    padding: 8px 20px;
+    color: var(--color-white);
+    transition: all 0.3s ease;
 
-    .img-wrapper {
-        box-shadow: 0 40px 300px 150px #9797974f;
-        transition: box-shadow 0.3s ease;
-
-        &:hover {
-            box-shadow: 0 0 20px 10px rgba(245, 182, 66, 0.5);
-        }
+    &:hover {
+        box-shadow: 0 0 10px 5px rgba(255, 126, 95, 0.4);
+        opacity: 0.9;
     }
+}
 
-    .social-icon {
-        width: 36px;
-        height: 36px;
-        color: var(--color-dark-gray);
-        transition: .3s;
+.home-btn-outline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 1px solid var(--color-dark-gray);
+    border-radius: 8px;
+    padding: 8px 20px;
+    color: var(--color-text-secondary);
+    transition: all 0.3s ease;
 
-        &:hover {
-            color: var(--color-white);
-        }
-    }
-
-    .home-btn-primary {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        font-size: 1rem;
-        background-color: var(--color-primary);
-        border: 1px solid var(--color-primary);
-        border-radius: 8px;
-        padding: 8px 20px;
-        color: var(--color-white);
-        transition: all 0.3s ease;
-
-        &:hover {
-            box-shadow: 0 0 10px 5px rgba(255, 126, 95, 0.4);
-            opacity: 0.9;
-        }
-    }
-
-    .home-btn-outline {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        font-size: 1rem;
-        background-color: transparent;
-        border: 1px solid var(--color-dark-gray);
-        border-radius: 8px;
-        padding: 8px 20px;
-        color: var(--color-text-secondary);
-        transition: all 0.3s ease;
-
-        &:hover {
-            border-color: var(--color-primary);
-            color: var(--color-primary);
-        }
+    &:hover {
+        border-color: var(--color-primary);
+        color: var(--color-primary);
     }
 }

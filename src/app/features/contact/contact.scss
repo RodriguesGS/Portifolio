@@ -1,34 +1,10 @@
-:host {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    .contact-card {
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        border-radius: 20px;
-        background: rgba(255, 255, 255, 0.03);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        transition: all 0.3s ease;
-        cursor: pointer;
-
-        &:hover {
-            background: color-mix(in srgb, var(--accent) 6%, transparent);
-            border-color: color-mix(in srgb, var(--accent) 30%, transparent);
-            transform: translateY(-4px);
-            box-shadow: 0 12px 30px color-mix(in srgb, var(--accent) 12%, transparent);
-        }
-    }
+.contact-card:hover {
+    background: color-mix(in srgb, var(--accent) 6%, transparent);
+    border-color: color-mix(in srgb, var(--accent) 30%, transparent);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px color-mix(in srgb, var(--accent) 12%, transparent);
 
     .contact-icon {
-        width: 22px;
-        height: 22px;
-        color: var(--color-text-secondary);
-        transition: color 0.3s ease;
-    }
-
-    .contact-card:hover .contact-icon {
         color: var(--accent);
     }
 }
