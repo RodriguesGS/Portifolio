@@ -1,6 +1,7 @@
 import ProjectCard, { Project } from "@/components/project-card"
+import { GitHubIcon } from "@/components/ui/brand-icons"
 import { loadMessages } from "@/lib/messages"
-import { Activity, Cloud, Database, Flag, ShieldCheck } from "lucide-react"
+import { Activity, ArrowUpRight, Cloud, Database, Flag, HeartPulse, ShieldCheck } from "lucide-react"
 import { GetStaticPropsContext } from "next"
 import { useTranslations } from "next-intl"
 import Head from "next/head"
@@ -17,7 +18,7 @@ const PROJECTS: Project[] = [
         year: 2026,
         stack: ["Python", "Airflow", "Docker", "PostgreSQL"],
         icon: Cloud,
-        repo: "", // cole a URL do repositório
+        repo: "https://github.com/RodriguesGS/WeatherETL",
         
     },
     {
@@ -31,48 +32,35 @@ const PROJECTS: Project[] = [
         year: 2026,
         stack: ["Python", "Scikit-learn", "Pandas"],
         icon: Activity,
-        repo: "", // cole a URL do repositório
+        repo: "https://github.com/RodriguesGS/AIPredict",
     },
     {
-        slug: "bpsentry",
-        title: "BPSentry",
+        slug: "cardioml",
+        title: "CardioML",
         summary: {
-            pt: "Monitoramento de backups com pipeline ETL e arquitetura Medallion.",
-            en: "Backup monitoring with an ETL pipeline and Medallion architecture.",
+            pt: "Modelo que identifica a presença de doenças cardíacas em pacientes.",
+            en: "Model that identifies the presence of heart disease in patients.",
         },
-        status: "in-progress",
+        status: "done",
         year: 2026,
-        stack: ["Python", "PostgreSQL", "Pandas"],
-        icon: ShieldCheck,
-        repo: "", // cole a URL do repositório
+        stack: ["Python", "MLP", "Random Forest"],
+        icon: HeartPulse,
+        repo: "https://github.com/RodriguesGS/CardioML",
         
     },
     {
-        slug: "panorama",
-        title: "Panorama",
+        slug: "barometro",
+        title: "Barometro",
         summary: {
             pt: "Pipeline dos dados abertos do CNPJ da Receita Federal.",
             en: "Pipeline for Brazil's open company registry (CNPJ) data.",
         },
         status: "in-progress",
         year: 2026,
-        stack: ["Python"],
+        stack: ["Python", "Pandas", "Requests"],
         icon: Database,
-        repo: "https://github.com/RodriguesGS/panorama-cnpj",
+        repo: "https://github.com/RodriguesGS/Barometro",
         
-    },
-    {
-        slug: "f1lake",
-        title: "F1Lake",
-        summary: {
-            pt: "Sistema para predição do campeão da Fórmula 1.",
-            en: "System to predict the Formula 1 champion.",
-        },
-        status: "in-progress",
-        year: 2026,
-        stack: ["Python", "AWS", "Streamlit"],
-        icon: Flag,
-        repo: "https://github.com/RodriguesGS/F1Lake",
     },
 ]
 
@@ -84,7 +72,6 @@ const ProjectsPage: React.FC = ({}) => {
         <div>
             <Head>
                 <title>{t("metaTitle")}</title>
-                <meta name="description" content={t("subtitle")} />
             </Head>
 
             <main className="relative isolate flex-1 overflow-hidden px-4 pb-24 pt-13">
@@ -103,11 +90,24 @@ const ProjectsPage: React.FC = ({}) => {
                         {t("subtitle")}
                     </p>
 
-                    <div className="mt-10 grid gap-5.5 md:grid-cols-2">
+                    <div className="mt-10 grid gap-5.5 md:grid-cols-2 ">
                         {PROJECTS.map((project, i) => (
                             <ProjectCard key={project.slug} project={project} index={i} />
                         ))}
                     </div>
+                </div>
+
+                <div className="mt-12 flex justify-center">
+                    <a
+                        href="https://github.com/RodriguesGS"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group inline-flex items-center gap-2 rounded-full border border-line px-5 py-2.5 text-sm text-muted transition-colors hover:border-accent/50 hover:text-foreground"
+                    >
+                        <GitHubIcon className="size-4" />
+                        {t("seeAll")}
+                        <ArrowUpRight className="size-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                    </a>
                 </div>
             </main>
         </div>

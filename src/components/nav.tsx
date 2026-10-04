@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import { useTranslations } from "next-intl";
 import { Briefcase, House, MessageCircle, User } from "lucide-react";
+import Link from "next/link";
 
 const SECTIONS = [
   { href: "/", key: "home", icon: House },
@@ -28,7 +29,7 @@ const Nav: React.FC = ({}) => {
 
             return (
               <li key={href} className="group relative">
-                <a
+                <Link
                   href={href}
                   aria-label={label}
                   aria-current={active ? "page" : undefined}
@@ -39,11 +40,11 @@ const Nav: React.FC = ({}) => {
                   }`}
                 >
                   <Icon className="size-5.5" strokeWidth={1.5} aria-hidden="true" />
-                </a>
+                </Link>
 
                 <span
                   aria-hidden="true"
-                  className="pointer-events-none absolute left-1/2 top-full z-10 mt-2 -translate-x-1/2 whitespace-nowrap rounded-md border border-line bg-card-deep px-2 py-1 text-xs text-foreground opacity-0 transition-opacity group-focus-within:opacity-100 group-hover:opacity-100"
+                  className="pointer-events-none absolute left-1/2 top-full z-10 mt-2 -translate-x-1/2 whitespace-nowrap rounded-md border border-line bg-card-deep px-2 py-1 text-xs text-foreground opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100"
                 >
                   {label}
                 </span>

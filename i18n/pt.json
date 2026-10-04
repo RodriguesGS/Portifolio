@@ -33,6 +33,28 @@
     "status": {
       "done": "Concluído",
       "in-progress": "Em andamento"
-    }
+    },
+    "seeAll" : "Ver todos no GitHub"
+  },
+  "about": {
+    "metaTitle": "RodriguesGS • Sobre",
+    "title": "Sobre mim",
+    "readme": {
+        "focus": "Engenharia de Dados",
+        "learning": "Cloud (AWS) e modelagem de dados",
+        "goal": "Dados que geram decisões reais"
+    },
+    "highlights": {
+        "focus": { "label": "Foco atual", "text": "Pipelines, modelagem e automação com Python e PostgreSQL." },
+        "building": { "label": "Construindo", "text": "<b>Barometro</b>: pipeline com arquitetura Medallion e dados abertos." },
+        "experience": { "label": "Experiência", "text": "<b>Analista de Suporte · Ponta</b>: atendo clientes do Intergado, investigando problemas em dados de gestão de bovinos." },
+        "education": { "label": "Formação", "text": "<b>Engenharia de Software</b> · conclusão em 2026." }
+    },
+    "skills": {
+        "title": "Habilidades",
+        "subtitle": "Ferramentas que uso para levar um dado da origem até a análise.",
+        "builtWith": "// este site foi feito com Next.js"
+    },
+    "downloadCv": "Baixar CV"
   }
 }

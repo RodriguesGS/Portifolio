@@ -22,7 +22,6 @@ const Hero: React.FC = ({}) => {
 
             <Head>
                 <title>{t("metaTitle")}</title>
-                <meta name="description" content={t("subtitle")} />
             </Head>
             
             <div className="mx-auto max-w-2xl">
