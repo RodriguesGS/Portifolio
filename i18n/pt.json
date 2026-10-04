@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "Gabriel Rodrigues — Engenharia de Dados",
+    "title": "Gabriel Rodrigues — Engenheiro de Dados",
     "description": "Desenvolvimento de pipelines e modelagem de dados com Python, SQL e Airflow."
   },
   "nav": {
@@ -19,10 +19,20 @@
     "rights": "Todos os direitos reservados."
   },
   "home": {
+    "metaTitle": "RodriguesGS • Início",
     "role": "Engenheiro de Dados",
     "tagline": "Desenvolvimento de pipelines e modelagem de dados com Python, SQL e Airflow.",
     "photoAlt": "Foto de perfil",
     "downloadCv": "Baixar CV",
     "seeProjects": "Ver projetos"
+  },
+  "projects": {
+    "metaTitle": "RodriguesGS • Projetos",
+    "title": "Projetos",
+    "subtitle": "Pipelines e projetos de dados, da ingestão ao consumo",
+    "status": {
+      "done": "Concluído",
+      "in-progress": "Em andamento"
+    }
   }
 }
