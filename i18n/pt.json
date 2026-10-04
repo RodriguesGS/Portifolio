@@ -71,5 +71,11 @@
     },
     "cvPrompt": "Prefere ver meu currículo antes?",
     "downloadCv": "Baixar CV"
+  },
+  "notFound": {
+    "metaTitle": "Página não encontrada — Gabriel Rodrigues",
+    "title": "Dado não encontrado",
+    "subtitle": "A página que você procurou não existe ou mudou de lugar.",
+    "back": "Voltar para o início"
   }
 }

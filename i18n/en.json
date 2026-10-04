@@ -71,5 +71,11 @@
     },
     "cvPrompt": "Would you prefer to see my CV first?",
     "downloadCv": "DOwnload CV"
+  },
+  "notFound": {
+    "metaTitle": "Page not found — Gabriel Rodrigues",
+    "title": "Data not found",
+    "subtitle": "The page you're looking for doesn't exist or has moved.",
+    "back": "Back to home"
   }
 }
