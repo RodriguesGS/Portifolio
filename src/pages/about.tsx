@@ -35,8 +35,6 @@ const AboutPage: React.FC = ({}) => {
             </Head>
 
             <main className="relative isolate flex-1 overflow-hidden px-4 pb-24 pt-13">
-                <div className="pointer-events-none absolute left-1/2 top-8 -z-10 h-125 w-225 -translate-x-1/2 bg-[radial-gradient(ellipse_at_center,rgba(37,99,235,0.10),transparent_65%)]" />
-
                 <div className="mx-auto max-w-180">
                     <h1 className="text-center text-[38px] font-semibold tracking-tight">{t("title")}</h1>
                     <div className="mx-auto mt-3 h-0.5 w-14 rounded-full bg-linear-to-r from-transparent via-accent to-transparent" />

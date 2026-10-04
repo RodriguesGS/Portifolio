@@ -56,5 +56,20 @@
         "builtWith": "// este site foi feito com Next.js"
     },
     "downloadCv": "Baixar CV"
+  },
+  "contact": {
+    "metaTitle": "RodriguesGS • Contato",
+    "metaDescription": "Fale comigo sobre vagas, projetos ou dados: e-mail, LinkedIn e GitHub.",
+    "title": "Contato",
+    "intro": "Tem um projeto, uma oportunidade ou só quer trocar uma ideia sobre dados? <hl>Me manda uma mensagem.</hl>",
+    "copy": "Copiar",
+    "copied": "Copiado!",
+    "channels": {
+        "email": { "title": "E-mail", "text": "Melhor canal para oportunidades e conversas sobre dados." },
+        "linkedin": { "title": "LinkedIn", "text": "Conecte-se e acompanhe minha trajetória profissional." },
+        "github": { "title": "GitHub", "text": "Onde os dados viram código: pipelines e projetos abertos." }
+    },
+    "cvPrompt": "Prefere ver meu currículo antes?",
+    "downloadCv": "Baixar CV"
   }
 }
