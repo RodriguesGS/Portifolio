@@ -5,6 +5,7 @@ import { Poppins, JetBrains_Mono } from "next/font/google";
 import Nav from "@/components/nav";
 import LangSwitch from "@/components/lang-switch";
 import "@/styles/global.css";
+import Footer from "@/components/footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -34,6 +35,7 @@ export default function App({ Component, pageProps }: AppProps) {
       >
         <Nav />
         <Component {...pageProps} />
+        <Footer />
         <LangSwitch />
       </div>
     </NextIntlClientProvider>

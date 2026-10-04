@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { useRouter } from "next/router";
 import { useTranslations } from "next-intl";
 import { Briefcase, House, MessageCircle, User } from "lucide-react";
@@ -10,12 +9,12 @@ const SECTIONS = [
   { href: "/contact", key: "contact", icon: MessageCircle },
 ] as const;
 
-function isActive(pathname: string, href: string) {
-  if (href === "/") return pathname === "/";
-  return pathname === href || pathname.startsWith(`${href}/`);
+function isSectionActive(pathname: string, href: string) {
+  return pathname === href ||
+    (href !== "/" && pathname.startsWith(`${href}/`));
 }
 
-export default function Nav() {
+const Nav: React.FC = ({}) => {
   const t = useTranslations("nav");
   const { pathname } = useRouter();
 
@@ -24,12 +23,12 @@ export default function Nav() {
       <nav aria-label={t("label")} className="mx-auto max-w-120">
         <ul className="flex items-center justify-between rounded-2xl border border-line bg-card px-[clamp(12px,5vw,44px)] py-3">
           {SECTIONS.map(({ href, key, icon: Icon }) => {
-            const active = isActive(pathname, href);
+            const active = isSectionActive(pathname, href);
             const label = t(key);
 
             return (
               <li key={href} className="group relative">
-                <Link
+                <a
                   href={href}
                   aria-label={label}
                   aria-current={active ? "page" : undefined}
@@ -40,7 +39,7 @@ export default function Nav() {
                   }`}
                 >
                   <Icon className="size-5.5" strokeWidth={1.5} aria-hidden="true" />
-                </Link>
+                </a>
 
                 <span
                   aria-hidden="true"
@@ -56,3 +55,5 @@ export default function Nav() {
     </header>
   );
 }
+
+export default Nav

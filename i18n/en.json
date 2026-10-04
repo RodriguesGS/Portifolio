@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "title": "Gabriel Rodrigues — Data Engineering",
+    "description": "Pipeline development and data modeling with Python, SQL and Airflow."
+  },
+  "nav": {
+    "label": "Main",
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "langSwitch": {
+    "label": "Site language",
+    "pt": "Portuguese",
+    "en": "English"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "home": {
+    "role": "Data Engineer",
+    "tagline": "Pipeline development and data modeling with Python, SQL and Airflow.",
+    "photoAlt": "Profile photo",
+    "downloadCv": "Download CV",
+    "seeProjects": "See projects"
+  }
+}
