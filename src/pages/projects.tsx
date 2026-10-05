@@ -1,7 +1,7 @@
 import ProjectCard, { Project } from "@/components/project-card"
 import { GitHubIcon } from "@/components/ui/brand-icons"
 import { loadMessages } from "@/lib/messages"
-import { Activity, ArrowUpRight, Cloud, Database, Flag, HeartPulse, ShieldCheck } from "lucide-react"
+import { Activity, ArrowUpRight, Cloud, Database, HeartPulse } from "lucide-react"
 import { GetStaticPropsContext } from "next"
 import Head from "next/head"
 import Reveal from "@/components/ui/reveal"
@@ -66,12 +66,12 @@ const PROJECTS: Project[] = [
     },
 ]
 
-const ProjectsPage: React.FC = ({}) => {
+const ProjectsPage: React.FC = () => {
 
     const t = useTranslations("projects")
 
     return (
-        <div>
+        <>
             <Head>
                 <title>{t("metaTitle")}</title>
             </Head>
@@ -110,7 +110,7 @@ const ProjectsPage: React.FC = ({}) => {
                     </a>
                 </div>
             </main>
-        </div>
+        </>
     )
 }
 

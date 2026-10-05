@@ -19,55 +19,56 @@
     "rights": "Todos os direitos reservados."
   },
   "home": {
-    "metaTitle": "RodriguesGS • Início",
+    "metaTitle": "Gabriel Rodrigues — Engenheiro de Dados",
     "role": "Engenheiro de Dados",
     "tagline": "Desenvolvimento de pipelines e modelagem de dados com Python, SQL e Airflow.",
-    "photoAlt": "Foto de perfil",
+    "photoAlt": "Foto de Gabriel Rodrigues",
     "downloadCv": "Baixar CV",
     "seeProjects": "Ver projetos"
   },
   "projects": {
-    "metaTitle": "RodriguesGS • Projetos",
+    "metaTitle": "Projetos • Gabriel Rodrigues",
     "title": "Projetos",
-    "subtitle": "Pipelines e projetos de dados, da ingestão ao consumo",
+    "subtitle": "Pipelines e projetos de dados, da ingestão ao consumo.",
     "status": {
       "done": "Concluído",
       "in-progress": "Em andamento"
     },
-    "seeAll" : "Ver todos no GitHub"
+    "seeAll": "Ver todos no GitHub"
   },
   "about": {
-    "metaTitle": "RodriguesGS • Sobre",
+    "metaTitle": "Sobre • Gabriel Rodrigues",
+    "metaDescription": "Quem sou, o que estou construindo e as ferramentas que uso em engenharia de dados.",
     "title": "Sobre mim",
     "readme": {
-        "focus": "Engenharia de Dados",
-        "learning": "Cloud (AWS) e modelagem de dados",
-        "goal": "Dados que geram decisões reais"
+      "focus": "Engenharia de Dados",
+      "learning": "Cloud (AWS) e modelagem de dados",
+      "goal": "Dados que geram decisões reais"
     },
     "highlights": {
-        "focus": { "label": "Foco atual", "text": "Pipelines, modelagem e automação com Python e PostgreSQL." },
-        "building": { "label": "Construindo", "text": "<b>Barometro</b>: pipeline com arquitetura Medallion e dados abertos." },
-        "experience": { "label": "Experiência", "text": "<b>Analista de Suporte · Ponta</b>: atendo clientes do Intergado, investigando problemas em dados de gestão de bovinos." },
-        "education": { "label": "Formação", "text": "<b>Engenharia de Software</b> · conclusão em 2026." }
+      "focus": { "label": "Foco atual", "text": "Pipelines, modelagem e automação com Python e PostgreSQL." },
+      "building": { "label": "Construindo", "text": "<b>Barometro</b>: pipeline com arquitetura Medallion e dados abertos." },
+      "experience": { "label": "Experiência", "text": "<b>Analista de Suporte · Ponta</b>: atendo clientes do Intergado, investigando problemas em dados de gestão de bovinos." },
+      "education": { "label": "Formação", "text": "<b>Engenharia de Software</b> · conclusão em 2026." }
     },
     "skills": {
-        "title": "Habilidades",
-        "subtitle": "Ferramentas que uso para levar um dado da origem até a análise.",
-        "builtWith": "// este site foi feito com Next.js"
+      "title": "Habilidades",
+      "subtitle": "Ferramentas que uso para levar um dado da origem até a análise.",
+      "builtWith": "// este site foi feito com Next.js"
     },
     "downloadCv": "Baixar CV"
   },
   "contact": {
-    "metaTitle": "RodriguesGS • Contato",
+    "metaTitle": "Contato • Gabriel Rodrigues",
     "metaDescription": "Fale comigo sobre vagas, projetos ou dados: e-mail, LinkedIn e GitHub.",
     "title": "Contato",
     "intro": "Tem um projeto, uma oportunidade ou só quer trocar uma ideia sobre dados? <hl>Me manda uma mensagem.</hl>",
     "copy": "Copiar",
     "copied": "Copiado!",
     "channels": {
-        "email": { "title": "E-mail", "text": "Melhor canal para oportunidades e conversas sobre dados." },
-        "linkedin": { "title": "LinkedIn", "text": "Conecte-se e acompanhe minha trajetória profissional." },
-        "github": { "title": "GitHub", "text": "Onde os dados viram código: pipelines e projetos abertos." }
+      "email": { "title": "E-mail", "text": "Melhor canal para oportunidades e conversas sobre dados." },
+      "linkedin": { "title": "LinkedIn", "text": "Conecte-se e acompanhe minha trajetória profissional." },
+      "github": { "title": "GitHub", "text": "Onde os dados viram código: pipelines e projetos abertos." }
     },
     "cvPrompt": "Prefere ver meu currículo antes?",
     "downloadCv": "Baixar CV"
@@ -76,6 +77,12 @@
     "metaTitle": "Página não encontrada — Gabriel Rodrigues",
     "title": "Dado não encontrado",
     "subtitle": "A página que você procurou não existe ou mudou de lugar.",
+    "back": "Voltar para o início"
+  },
+  "serverError": {
+    "metaTitle": "Erro no servidor — Gabriel Rodrigues",
+    "title": "Algo deu errado",
+    "subtitle": "Tive um problema ao carregar esta página. Tente de novo em instantes.",
     "back": "Voltar para o início"
   }
 }

@@ -53,6 +53,7 @@ const NotFoundPage: React.FC = () => {
 
                     <Link
                         href="/"
+                        scroll={false}
                         className="mt-8 inline-flex items-center gap-2 rounded-lg border border-line-strong px-5 py-2.75 transition-colors hover:border-accent hover:text-accent"
                     >
                         <ArrowLeft className="size-4" />

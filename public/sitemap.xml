@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://rodriguesgs.com/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://rodriguesgs.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rodriguesgs.com/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rodriguesgs.com/"/>
+  </url>
+  <url>
+    <loc>https://rodriguesgs.com/en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://rodriguesgs.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rodriguesgs.com/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rodriguesgs.com/"/>
+  </url>
+  <url>
+    <loc>https://rodriguesgs.com/projects</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://rodriguesgs.com/projects"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rodriguesgs.com/en/projects"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rodriguesgs.com/projects"/>
+  </url>
+  <url>
+    <loc>https://rodriguesgs.com/en/projects</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://rodriguesgs.com/projects"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rodriguesgs.com/en/projects"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rodriguesgs.com/projects"/>
+  </url>
+  <url>
+    <loc>https://rodriguesgs.com/about</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://rodriguesgs.com/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rodriguesgs.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rodriguesgs.com/about"/>
+  </url>
+  <url>
+    <loc>https://rodriguesgs.com/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://rodriguesgs.com/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rodriguesgs.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rodriguesgs.com/about"/>
+  </url>
+  <url>
+    <loc>https://rodriguesgs.com/contact</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://rodriguesgs.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rodriguesgs.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rodriguesgs.com/contact"/>
+  </url>
+  <url>
+    <loc>https://rodriguesgs.com/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://rodriguesgs.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rodriguesgs.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rodriguesgs.com/contact"/>
+  </url>
+</urlset>

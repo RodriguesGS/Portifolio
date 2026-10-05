@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Gabriel Rodrigues — Data Engineer",
-    "description": "Pipeline development and data modeling with Python, SQL and Airflow."
+    "description": "Data pipeline development and data modeling with Python, SQL and Airflow."
   },
   "nav": {
     "label": "Main",
@@ -19,63 +19,70 @@
     "rights": "All rights reserved."
   },
   "home": {
-    "metaTitle": "RodriguesGS • Home",
+    "metaTitle": "Gabriel Rodrigues — Data Engineer",
     "role": "Data Engineer",
-    "tagline": "Pipeline development and data modeling with Python, SQL and Airflow.",
-    "photoAlt": "Profile photo",
+    "tagline": "Data pipeline development and data modeling with Python, SQL and Airflow.",
+    "photoAlt": "Photo of Gabriel Rodrigues",
     "downloadCv": "Download CV",
     "seeProjects": "See projects"
   },
   "projects": {
-    "metaTitle": "RodriguesGS • Projects",
+    "metaTitle": "Projects • Gabriel Rodrigues",
     "title": "Projects",
-    "subtitle": "Data pipelines and projects, from ingestion to consumption",
+    "subtitle": "Data pipelines and projects, from ingestion to consumption.",
     "status": {
       "done": "Done",
       "in-progress": "In progress"
     },
-    "seeAll" : "See all on Github"
+    "seeAll": "See all on GitHub"
   },
   "about": {
-    "metaTitle": "RodriguesGS • About",
+    "metaTitle": "About • Gabriel Rodrigues",
+    "metaDescription": "Who I am, what I'm building and the tools I use for data engineering.",
     "title": "About me",
     "readme": {
-        "focus": "Data engineering",
-        "learning": "Cloud (AWS) and data modeling",
-        "goal": "Data that drives real decisions"
+      "focus": "Data engineering",
+      "learning": "Cloud (AWS) and data modeling",
+      "goal": "Data that drives real decisions"
     },
     "highlights": {
-        "focus": { "label": "Current focus", "text": "Pipelines, modeling, and automation with Python and PostgreSQL." },
-        "building": { "label": "Building", "text": "<b>Barometro</b>: pipeline with Medallion architecture and open data." },
-        "experience": { "label": "Experience", "text": "<b>Support Analyst · Ponta</b>: I assist Intergado clients by investigating issues with cattle management data." },
-        "education": { "label": "Education", "text": "<b>Software Engineering</b> · completion in 2026." }
+      "focus": { "label": "Current focus", "text": "Pipelines, data modeling and automation with Python and PostgreSQL." },
+      "building": { "label": "Building", "text": "<b>Barometro</b>: a pipeline with Medallion architecture and open data." },
+      "experience": { "label": "Experience", "text": "<b>Support Analyst · Ponta</b>: I support Intergado customers by investigating issues in cattle management data." },
+      "education": { "label": "Education", "text": "<b>Software Engineering</b> · graduating in 2026." }
     },
     "skills": {
-        "title": "Skills",
-        "subtitle": "Tools I use to take data from the source to analysis.",
-        "builtWith": "//this site was built with Next.js"
+      "title": "Skills",
+      "subtitle": "Tools I use to take data from its source to analysis.",
+      "builtWith": "// this site was built with Next.js"
     },
     "downloadCv": "Download CV"
   },
   "contact": {
-    "metaTitle": "RodriguesGS • Contact",
-    "metaDescription": "Get in touch with me regarding job openings, projects, or data: email, LinkedIn, and GitHub.",
+    "metaTitle": "Contact • Gabriel Rodrigues",
+    "metaDescription": "Reach out about job openings, projects or data: e-mail, LinkedIn and GitHub.",
     "title": "Contact",
-    "intro": "Do you have a project, an opportunity, or just want to chat about data? <hl>Send me a message.</hl>",
+    "intro": "Have a project, an opportunity, or just want to talk data? <hl>Send me a message.</hl>",
     "copy": "Copy",
     "copied": "Copied!",
     "channels": {
-        "email": { "title": "E-mail", "text": "Best channel for data-related opportunities and conversations." },
-        "linkedin": { "title": "LinkedIn", "text": "Connect with me and follow my professional journey." },
-        "github": { "title": "GitHub", "text": "Where data becomes code: pipelines and open projects." }
+      "email": { "title": "E-mail", "text": "Best channel for opportunities and data conversations." },
+      "linkedin": { "title": "LinkedIn", "text": "Connect and follow my professional journey." },
+      "github": { "title": "GitHub", "text": "Where data becomes code: pipelines and open projects." }
     },
-    "cvPrompt": "Would you prefer to see my CV first?",
-    "downloadCv": "DOwnload CV"
+    "cvPrompt": "Want to see my résumé first?",
+    "downloadCv": "Download CV"
   },
   "notFound": {
     "metaTitle": "Page not found — Gabriel Rodrigues",
     "title": "Data not found",
     "subtitle": "The page you're looking for doesn't exist or has moved.",
+    "back": "Back to home"
+  },
+  "serverError": {
+    "metaTitle": "Server error — Gabriel Rodrigues",
+    "title": "Something went wrong",
+    "subtitle": "There was a problem loading this page. Please try again in a moment.",
     "back": "Back to home"
   }
 }

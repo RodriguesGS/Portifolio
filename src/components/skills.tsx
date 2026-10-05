@@ -56,13 +56,13 @@ const Skills: React.FC = () => {
             <div className="relative mt-9 sm:mx-auto sm:w-fit">
                 <div className="pointer-events-none absolute inset-0 hidden sm:block">
                     <div className="absolute inset-x-11 top-11 border-t border-dashed border-line-strong">
-                        <span className="absolute -top-0.75 -ml-0.75 size-1.5 rounded-full bg-accent shadow-[0_0_10px_2px_rgba(91,156,246,0.6)] motion-safe:animate-flow-1" />
+                        <span className="absolute -top-0.75 left-0 -ml-0.75 size-1.5 rounded-full bg-accent shadow-[0_0_10px_2px_rgba(91,156,246,0.6)] motion-safe:animate-flow-1" />
                     </div>
                     <div className="absolute right-11 top-11 h-28 border-r border-dashed border-line-strong">
-                        <span className="absolute -left-0.5 -mt-0.75 size-1.5 rounded-full bg-accent shadow-[0_0_10px_2px_rgba(91,156,246,0.6)] motion-safe:animate-flow-2" />
+                        <span className="absolute -left-0.5 top-0 -mt-0.75 size-1.5 rounded-full bg-accent shadow-[0_0_10px_2px_rgba(91,156,246,0.6)] motion-safe:animate-flow-2" />
                     </div>
                     <div className="absolute inset-x-11 top-39 border-t border-dashed border-line-strong">
-                        <span className="absolute -top-0.75 -ml-0.75 size-1.5 rounded-full bg-accent shadow-[0_0_10px_2px_rgba(91,156,246,0.6)] motion-safe:animate-flow-3" />
+                        <span className="absolute -top-0.75 left-0 -ml-0.75 size-1.5 rounded-full bg-accent shadow-[0_0_10px_2px_rgba(91,156,246,0.6)] motion-safe:animate-flow-3" />
                     </div>
                 </div>
 

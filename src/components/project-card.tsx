@@ -1,4 +1,4 @@
-import { ArrowUpRight, Icon, LucideIcon } from "lucide-react";
+import { ArrowUpRight, LucideIcon } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { GitHubIcon } from "./ui/brand-icons";
 

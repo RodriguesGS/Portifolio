@@ -37,14 +37,13 @@ export default function App({ Component, pageProps }: AppProps) {
         <Nav />
 
           <MotionConfig reducedMotion="user">
-            <AnimatePresence mode="wait" initial={false} onExitComplete={() => window.scrollTo({ top: 0 })}>
+            <AnimatePresence mode="wait" initial={false} onExitComplete={() => window.scrollTo({ top: 0, behavior: "instant" })}>
                 <motion.div
                     key={`${locale}${pathname}`}
                     className="flex flex-1 flex-col"
-                    initial={{ opacity: 0, filter: "blur(6px)" }}
-                    animate={{ opacity: 1, filter: "blur(0px)" }}
-                    exit={{ opacity: 0, filter: "blur(6px)", transition: { duration: 0.2, ease: "easeIn" } }}
-                    transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+                    initial={{ opacity: 0}}
+                    animate={{ opacity: 1, transition: { duration: 0.25, ease: "easeOut" } }}
+                    exit={{ opacity: 0, transition: { duration: 0.15, ease: "easeIn" } }}
                 >
                     <Component {...pageProps} />
                 </motion.div>

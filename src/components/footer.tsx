@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 
 
-const Footer: React.FC = ({}) => {
+const Footer: React.FC = () => {
     const t = useTranslations("footer");
     const year = new Date().getFullYear();
 

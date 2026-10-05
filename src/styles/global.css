@@ -30,24 +30,24 @@
   --animate-flow-3: flow-3 6s linear infinite;
 
   @keyframes flow-1 {
-      0% { left: 0%; opacity: 0; }
+      0% { translate: 0 0; opacity: 0; }
       3% { opacity: 1; }
-      40% { left: 100%; opacity: 1; }
-      41%, 100% { left: 100%; opacity: 0; }
+      40% { translate: 480px 0; opacity: 1; }
+      41%, 100% { translate: 480px 0; opacity: 0; }
   }
 
   @keyframes flow-2 {
-      0%, 40% { top: 0%; opacity: 0; }
+      0%, 40% { translate: 0 0; opacity: 0; }
       41% { opacity: 1; }
-      55% { top: 100%; opacity: 1; }
-      56%, 100% { top: 100%; opacity: 0; }
+      55% { translate: 0 112px; opacity: 1; }
+      56%, 100% { translate: 0 112px; opacity: 0; }
   }
 
   @keyframes flow-3 {
-      0%, 55% { left: 100%; opacity: 0; }
+      0%, 55% { translate: 480px 0; opacity: 0; }
       56% { opacity: 1; }
-      95% { left: 0%; opacity: 1; }
-      100% { left: 0%; opacity: 0; }
+      95% { translate: 0 0; opacity: 1; }
+      100% { translate: 0 0; opacity: 0; }
   }
 
   @keyframes fade-up {

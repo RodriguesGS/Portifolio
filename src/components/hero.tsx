@@ -8,10 +8,10 @@ import Head from "next/head";
 const SOCIALS = [
     { site: "https://github.com/RodriguesGS", label: "Github", icon: GitHubIcon, external: true },
     { site: "https://www.linkedin.com/in/gabriel-soares1402", label: "LinkedIn", icon: LinkedInIcon, external: true },
-    { site: "mailto:contato@rodriguesgs.com", label: "Email", icon: Mail, external: true },
+    { site: "mailto:contato@rodriguesgs.com", label: "Email", icon: Mail, external: false },
 ]
 
-const Hero: React.FC = ({}) => {
+const Hero: React.FC = () => {
 
     const t = useTranslations("home")
     const locale = useLocale()
@@ -31,8 +31,9 @@ const Hero: React.FC = ({}) => {
                     <Image
                         src={"/images/foto.jpeg"}
                         alt={t("photoAlt")}
-                        width={150}
-                        height={150}
+                        width={112}
+                        height={112}
+                        preload
                         className="size-28 rounded-full object-cover transition-[box-shadow,scale] duration-300 ease-out group-hover:scale-[1.04] group-hover:shadow-[0_0_28px_6px_rgba(91,156,246,0.45)] group-hover:duration-500 group-hover:delay-450"
                     />
                 </div>
@@ -72,7 +73,7 @@ const Hero: React.FC = ({}) => {
                     />
                 </a>
 
-                <Link href="/projects" className="group/btn inline-flex items-center gap-2.5 rounded-lg bg-accent-strong px-5 py-2.5 font-medium text-white transition-opacity hover:opacity-90">
+                <Link href="/projects" scroll={false} className="group/btn inline-flex items-center gap-2.5 rounded-lg bg-accent-strong px-5 py-2.5 font-medium text-white transition-opacity hover:opacity-90">
                     {t("seeProjects")}
                     <ArrowRight
                         className="size-4 transition-transform group-hover/btn:translate-x-0.5"
