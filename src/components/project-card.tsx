@@ -24,7 +24,6 @@ const STATUS_STYLES: Record<Project["status"], { pill: string; dot: string }> = 
     },
 };
 
-
 type Props = {
     project: Project
     index: number
@@ -45,7 +44,7 @@ const ProjectCard: React.FC<Props> = ({ project, index }) => {
             href={project.repo}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative flex flex-col gap-4 overflow-hidden rounded-[14px] border border-line bg-linear-to-b from-[#1A1A1A] to-[#151515] p-6 pl-6.5 pb-4.5 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] transition-[translate,border-color,box-shadow] duration-350 ease-[cubic-bezier(.2,.8,.2,1)] hover:border-[#2F3B52] hover:shadow-[0_18px_40px_-18px_rgba(37,99,235,0.55)] motion-safe:hover:-translate-y-1"
+            className="group relative h-full flex flex-col gap-4 overflow-hidden rounded-[14px] border border-line bg-linear-to-b from-[#1A1A1A] to-[#151515] p-6 pl-6.5 pb-4.5 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] transition-[translate,border-color,box-shadow] duration-350 ease-[cubic-bezier(.2,.8,.2,1)] hover:border-[#2F3B52] hover:shadow-[0_18px_40px_-18px_rgba(37,99,235,0.55)] motion-safe:hover:-translate-y-1"
         >   
 
             <span className="pointer-events-none absolute inset-0 bg-[radial-gradient(520px_circle_at_0%_0%,rgba(91,156,246,0.13),transparent_45%)] opacity-0 transition-opacity duration-450 group-hover:opacity-100" />

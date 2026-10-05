@@ -1,6 +1,6 @@
-import { useTranslations } from "next-intl"
 import Image from "next/image";
-import Reveal from "@/components/ui/reveal"
+import { useTranslations } from "next-intl";
+import Reveal from "@/components/ui/reveal";
 
 type Tool = {
     name: string;
@@ -43,14 +43,15 @@ const SkillTile: React.FC<{ tool: Tool }> = ({ tool }) => (
     </div>
 );
 
-const Skills: React.FC = ({}) => {
-    
-    const t = useTranslations("about.skills")
+const Skills: React.FC = () => {
+    const t = useTranslations("about.skills");
 
     return (
         <section id="skills" className="mt-14 scroll-mt-8">
-            <h2 className="text-2xl font-semibold text-center">{t("title")}</h2>
-            <p className="mt-1.5 text-sm text-muted text-center">{t("subtitle")}</p>
+            <Reveal>
+                <h2 className="text-2xl font-semibold text-center">{t("title")}</h2>
+                <p className="mt-1.5 text-sm text-muted text-center">{t("subtitle")}</p>
+            </Reveal>
 
             <div className="relative mt-9 sm:mx-auto sm:w-fit">
                 <div className="pointer-events-none absolute inset-0 hidden sm:block">
@@ -67,16 +68,18 @@ const Skills: React.FC = ({}) => {
 
                 <div className="flex flex-wrap justify-center gap-3 sm:grid sm:grid-cols-[repeat(5,5.5rem)] sm:gap-x-8 sm:gap-y-6">
                     {TOOLS.map((tool, i) => (
-                        <Reveal key={tool.name} delay={i * 0.04}>
+                        <Reveal key={tool.name} delay={0.05 + i * 0.04}>
                             <SkillTile tool={tool} />
                         </Reveal>
                     ))}
                 </div>
             </div>
 
-            <p className="mt-8 text-center font-mono text-xs text-[#5A5A5A]">{t("builtWith")}</p>
+            <Reveal delay={0.3}>
+                <p className="mt-8 text-center font-mono text-xs text-[#5A5A5A]">{t("builtWith")}</p>
+            </Reveal>
         </section>
-    )
-}
+    );
+};
 
-export default Skills
+export default Skills;
