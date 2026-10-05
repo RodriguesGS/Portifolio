@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl"
 import Image from "next/image";
+import Reveal from "@/components/ui/reveal"
 
 type Tool = {
     name: string;
@@ -65,8 +66,10 @@ const Skills: React.FC = ({}) => {
                 </div>
 
                 <div className="flex flex-wrap justify-center gap-3 sm:grid sm:grid-cols-[repeat(5,5.5rem)] sm:gap-x-8 sm:gap-y-6">
-                    {TOOLS.map((tool) => (
-                        <SkillTile key={tool.name} tool={tool} />
+                    {TOOLS.map((tool, i) => (
+                        <Reveal key={tool.name} delay={i * 0.04}>
+                            <SkillTile tool={tool} />
+                        </Reveal>
                     ))}
                 </div>
             </div>

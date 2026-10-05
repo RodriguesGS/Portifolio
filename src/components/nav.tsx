@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import { useTranslations } from "next-intl";
 import { Briefcase, House, MessageCircle, User } from "lucide-react";
 import Link from "next/link";
+import { motion } from "motion/react";
 
 const SECTIONS = [
   { href: "/", key: "home", icon: House },
@@ -39,11 +40,17 @@ const Nav: React.FC = ({}) => {
                       : "text-muted hover:bg-white/5 hover:text-foreground"
                   }`}
                 >
-                  <Icon className="size-5.5" strokeWidth={1.5} aria-hidden="true" />
+                  {active && (
+                      <motion.span
+                          layoutId="nav-active"
+                          className="absolute inset-0 -z-10 rounded-xl bg-accent-strong"
+                          transition={{ type: "spring", stiffness: 420, damping: 34 }}
+                      />
+                  )}
+                  <Icon className="size-5.5" strokeWidth={1.5}/>
                 </Link>
 
                 <span
-                  aria-hidden="true"
                   className="pointer-events-none absolute left-1/2 top-full z-10 mt-2 -translate-x-1/2 whitespace-nowrap rounded-md border border-line bg-card-deep px-2 py-1 text-xs text-foreground opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100"
                 >
                   {label}

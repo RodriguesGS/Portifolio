@@ -3,8 +3,10 @@ import { GitHubIcon } from "@/components/ui/brand-icons"
 import { loadMessages } from "@/lib/messages"
 import { Activity, ArrowUpRight, Cloud, Database, Flag, HeartPulse, ShieldCheck } from "lucide-react"
 import { GetStaticPropsContext } from "next"
-import { useTranslations } from "next-intl"
 import Head from "next/head"
+import Reveal from "@/components/ui/reveal"
+import { useTranslations } from "next-intl"
+
 
 const PROJECTS: Project[] = [
     {
@@ -88,7 +90,9 @@ const ProjectsPage: React.FC = ({}) => {
 
                     <div className="mt-10 grid gap-5.5 md:grid-cols-2 ">
                         {PROJECTS.map((project, i) => (
-                            <ProjectCard key={project.slug} project={project} index={i} />
+                            <Reveal key={project.slug} delay={0.08 + i * 0.06} className="h-full">
+                                <ProjectCard project={project} index={i} />
+                            </Reveal>
                         ))}
                     </div>
                 </div>

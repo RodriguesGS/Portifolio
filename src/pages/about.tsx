@@ -1,4 +1,5 @@
 import Skills from "@/components/skills";
+import Reveal from "@/components/ui/reveal";
 import { loadMessages } from "@/lib/messages";
 import { BriefcaseBusiness, Download, GraduationCap, Hammer, LucideIcon, Target } from "lucide-react";
 import { GetStaticPropsContext } from "next";
